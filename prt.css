@@ -1,0 +1,308 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: aliceblue;
+
+}
+
+.navbar {
+  height: 100px;
+  background-color: rgb(13, 13, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.port {
+  font-size: 2.5rem;
+  margin-left: 50px;
+
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+
+}
+
+a {
+  margin-left: 30px;
+
+  margin-right: 50px;
+  text-decoration: none;
+  /* color:rgb(89, 53, 53); */
+  /* new change */
+
+  font-weight: 500;
+  transition: all 0.3s ease0;
+}
+a:hover{
+  color: rgb(138, 238, 206);
+  border-bottom: 2px solid rgb(138,238,206);
+  padding-bottom: 3px;
+}
+
+.main {
+  height: 600px;
+  background-color: rgb(7, 7, 26);
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+
+}
+
+h1 {
+  /* width: 50%; */
+  margin-left: 50px;
+  padding-right: 80px;
+}
+
+.text {
+  width: 50%;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+  border: 10px solid rgba(255, 255, 255, 0.546);
+  margin-right: 300px;
+  background-image: url(wall2.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+span {
+  color: rgb(138, 238, 206);
+}
+
+h4 {
+
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: silver;
+}
+
+.footer {
+  height: 200px;
+  background-color: rgb(7, 7, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#you{
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+
+.logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(138, 238, 206, 0.7);
+}
+
+.insta {
+  background-image: url('isnta.jpg');
+}
+
+.fb {
+  background-image: url('fb.jpg');
+}
+
+.git {
+  background-image: url('github.jpg');
+}
+
+.linkdin {
+  background-image: url('linkdin.jpg');
+}
+
+.section {
+  min-height: 600px;
+  background-color: rgb(7, 7, 26);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 700px;
+  margin: 50px auto;
+  font-size: 1.2rem;
+}
+
+.content h2 {
+  color: rgb(138, 238, 206);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about {
+  margin-top: -50px;
+}
+
+#bca {
+  margin-top: 70px;
+}
+
+#visit{
+  width: 100%;
+  background-color: rgb(138, 238, 206);
+  color:black ;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#visit:hover{
+  
+  background-color: rgb(111, 215, 185);
+  transform: scale(1.03);
+
+}
+
+#portfolio {
+  margin-top: -50px;
+  display: flex;
+
+}
+
+.amz {
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+  background-image: url(ss.amz.jpg);
+  background-size: cover;
+ 
+}
+
+#ab  {
+  font-size: 1.8rem;
+  font-style: bold;
+  margin-top: 45px;
+  margin-left: -25px;
+  display: inline-block;
+}
+#abc{  font-size: 1.8rem;
+  font-style: bold;
+  margin-top: 45px;
+  margin-left: -1px;
+  display: inline-block;
+
+}
+.rock{
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+  background-image: url(ss.game.jpg);
+  background-size: cover;
+}
+.prjt{
+  display: flex;
+  justify-content: space-evenly;
+}
+#the{
+  margin-top:30px;
+}
+#contact{
+  margin-top:-4px;
+}
+
+.contact-section {
+  background-color: rgb(7, 7, 26);
+  color: aliceblue;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: rgb(138, 238, 206);
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: silver;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(13, 13, 51);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(138, 238, 206, 0.2);
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: rgb(138, 238, 206);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: rgb(22, 22, 50);
+  color: aliceblue;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(138, 238, 206);
+  box-shadow: 0 0 5px rgba(138, 238, 206, 0.5);
+}
+
+#sub {
+  width: 100%;
+  background-color: rgb(138, 238, 206);
+  color: rgb(7, 7, 26);
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sub:hover {
+  background-color: rgb(111, 215, 185);
+  transform: scale(1.03);
+}
