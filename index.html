@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="prt.css">
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="port">Portfolio</div>
+    <div class="tags">
+      <a href="#" onclick="showSection('home')">HOME</a>
+      <a href="#" onclick="showSection('about')">ABOUT</a>
+      <a href="#" onclick="showSection('portfolio')">PORTFOLIO</a>
+      <a href="#" onclick="showSection('contact')">CONTACT</a>
+    </div>
+  </div>
+
+
+  <section id="home" class="section">
+    <div class="main">
+      <div class="text">
+        <h1>Hi, most welcome! You are visiting the
+          <span>PRATEEK SHARMA'S</span> portfolio website
+          <br>
+          <span id="element"></span>
+        </h1>
+        <h4>Hey there! 👋 I’m Prateek, a creative Web Developer who enjoys turning code into beautiful websites.
+          I build responsive, fast, and modern web pages using the latest tools and technologies.
+          I believe that great design and functionality go hand in hand to make an amazing web experience.</h4>
+      </div>
+      <div class="img"></div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section" style="display:none;">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>I am Prateek Sharma, a passionate Web Developer with expertise in HTML, CSS, JavaScript, and modern frameworks.
+        I love building clean and user-friendly websites that deliver great user experiences.</p>
+      <p id="bca">I am currently persuing Becholer of computer application (BCA) from Bareilly College Bareilly
+        <br>
+        <br>
+        <br>
+
+        you can visit my college
+      </p>
+      <br>
+      <br>
+      <button id="visit"> <a href="https://bcb.ac.in/">visit me</a></button>
+    </div>
+  </section>
+
+
+  <section id="portfolio" class="section" style="display:none;">
+    <div class="content">
+      <h2>My Work</h2>
+      <p>Here are some of my projects showcasing my front-end and back-end development skills.</p>
+      <br>
+      <br>
+      <div class="prjt">
+
+        <div class="amazon">
+          <div class="amz">
+            <div class="amzlogo">
+
+            </div>
+          </div>
+
+          <a id="ab" href="amazone.html">
+            <p>view amazon clone👉</p>
+          </a>
+        </div>
+
+        <div class="game">
+          <div class="rock">
+
+          </div>
+          <a id="abc" href="game.html">
+            <p>view the game👉</p>
+            </ahref>
+          </a>
+        </div>
+      </div>
+      <h1 id="the">The working project are ....</h1>
+      <h2 id="curr">The currency converter</h2>
+      <h2 id="apni">Apni income app</h2>
+
+    </div>
+
+
+
+  </section>
+
+
+  <section id="contact" class="section  contact-section" style="display:none;">
+    <div class="content">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out! i will get back to you as soon as posiible .</p>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">your message</label>
+          <textarea id="message" name="message" placeholder="write your message here...." rows="5" required></textarea>
+        </div>
+        <button id="sub"type="submit">send message</button>
+
+      </form>
+    </div>
+
+
+    
+
+  </section>
+
+
+  <div class="footer">
+    <h3 id="you">You can visit me on ..</h3>
+    <div class="all">
+      <a href="https://www.instagram.com/prateeksharma__07" target="_blank" class="logo insta"></a>
+      <a href="https://www.facebook.com/" target="_blank" class="logo fb"></a>
+      <a href="https://github.com/" target="_blank" class="logo git"></a>
+      <a href="https://www.linkedin.com/" target="_blank" class="logo linkdin"></a>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>&amp; Working.</i>', '<i>I am a Developer</i>'],
+      typeSpeed: 50,
+      loop: true
+    });
+
+
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("6il8QkWv3NipOMSPo"); // <-- Apna EmailJS public key yahan daalo
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_4xfaqz7", "template_s7r8k8l", this)
+      .then(function() {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("❌ Failed to send message. Try again later.");
+        console.error("Error:", error);
+      });
+  });
+</script>
+</body>
+
+</html>
