@@ -310,6 +310,12 @@ textarea:focus {
 /* ---------------------- MOBILE RESPONSIVE ---------------------- */
 
 @media (max-width: 768px) {
+  #about,
+#portfolio,
+#contact {
+  margin-top: 0 !important;
+}
+
 
   /* Navbar */
   .navbar {
