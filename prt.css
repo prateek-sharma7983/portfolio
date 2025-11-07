@@ -1,8 +1,9 @@
+
+
 * {
   margin: 0px;
   padding: 0px;
   color: aliceblue;
-
 }
 
 .navbar {
@@ -16,30 +17,25 @@
 .port {
   font-size: 2.5rem;
   margin-left: 50px;
-
 }
 
 .tags {
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
-
 }
 
 a {
   margin-left: 30px;
-
   margin-right: 50px;
   text-decoration: none;
-  /* color:rgb(89, 53, 53); */
-  /* new change */
-
   font-weight: 500;
   transition: all 0.3s ease0;
 }
-a:hover{
+
+a:hover {
   color: rgb(138, 238, 206);
-  border-bottom: 2px solid rgb(138,238,206);
+  border-bottom: 2px solid rgb(138, 238, 206);
   padding-bottom: 3px;
 }
 
@@ -48,14 +44,10 @@ a:hover{
   background-color: rgb(7, 7, 26);
   display: flex;
   align-items: center;
-
   justify-content: space-between;
-
-
 }
 
 h1 {
-  /* width: 50%; */
   margin-left: 50px;
   padding-right: 80px;
 }
@@ -79,7 +71,6 @@ span {
 }
 
 h4 {
-
   margin-left: 50px;
   margin-top: 30px;
   font-size: 1.2rem;
@@ -93,14 +84,12 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
-#you{
+#you {
   font-size: 1.5rem;
   margin-top: 5px;
 }
-
 
 .logo {
   display: inline-block;
@@ -114,7 +103,6 @@ h4 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
 .logo:hover {
   transform: scale(1.2);
   box-shadow: 0 0 10px rgba(138, 238, 206, 0.7);
@@ -167,10 +155,10 @@ h4 {
   margin-top: 70px;
 }
 
-#visit{
+#visit {
   width: 100%;
   background-color: rgb(138, 238, 206);
-  color:black ;
+  color: black;
   font-size: 1.1rem;
   padding: 12px;
   border: none;
@@ -178,17 +166,15 @@ h4 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#visit:hover{
-  
+
+#visit:hover {
   background-color: rgb(111, 215, 185);
   transform: scale(1.03);
-
 }
 
 #portfolio {
   margin-top: -50px;
   display: flex;
-
 }
 
 .amz {
@@ -197,39 +183,39 @@ h4 {
   border: 2px solid white;
   background-image: url(ss.amz.jpg);
   background-size: cover;
- 
 }
 
-#ab  {
+#ab {
   font-size: 1.8rem;
-  font-style: bold;
   margin-top: 45px;
-  margin-left: -25px;
   display: inline-block;
 }
-#abc{  font-size: 1.8rem;
-  font-style: bold;
-  margin-top: 45px;
-  margin-left: -1px;
-  display: inline-block;
 
+#abc {
+  font-size: 1.8rem;
+  margin-top: 45px;
+  display: inline-block;
 }
-.rock{
+
+.rock {
   height: 200px;
   width: 200px;
   border: 2px solid white;
   background-image: url(ss.game.jpg);
   background-size: cover;
 }
-.prjt{
+
+.prjt {
   display: flex;
   justify-content: space-evenly;
 }
-#the{
-  margin-top:30px;
+
+#the {
+  margin-top: 30px;
 }
-#contact{
-  margin-top:-4px;
+
+#contact {
+  margin-top: -4px;
 }
 
 .contact-section {
@@ -239,26 +225,39 @@ h4 {
   text-align: center;
 }
 
-.contact-section h2 {
-  font-size: 2.2rem;
-  color: rgb(138, 238, 206);
-  margin-bottom: 10px;
-}
-
-.contact-section p {
-  font-size: 1.1rem;
-  color: silver;
-  margin-bottom: 40px;
-}
-
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
   background-color: rgb(13, 13, 51);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(138, 238, 206, 0.2);
 }
+/* Contact page original PC layout fix */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(13, 13, 51);
+  padding: 30px;
+  border-radius: 12px;
+}
+#sub {
+  width: 100%;
+  background-color: #007bff;  /* blue */
+  color: white;                /* white text */
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+#sub:hover {
+  background-color: #0056b3;  /* darker blue */
+  transform: scale(1.03);
+}
+
 
 .form-group {
   text-align: left;
@@ -284,40 +283,10 @@ textarea {
   outline: none;
 }
 
-input:focus,
-textarea:focus {
-  border-color: rgb(138, 238, 206);
-  box-shadow: 0 0 5px rgba(138, 238, 206, 0.5);
-}
-
-#sub {
-  width: 100%;
-  background-color: rgb(138, 238, 206);
-  color: rgb(7, 7, 26);
-  font-size: 1.1rem;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#sub:hover {
-  background-color: rgb(111, 215, 185);
-  transform: scale(1.03);
-}
-
-/* ---------------------- MOBILE RESPONSIVE ---------------------- */
+/* ---------------------- RESPONSIVE START ---------------------- */
 
 @media (max-width: 768px) {
-  #about,
-#portfolio,
-#contact {
-  margin-top: 0 !important;
-}
 
-
-  /* Navbar */
   .navbar {
     height: auto;
     flex-direction: column;
@@ -332,15 +301,14 @@ textarea:focus {
 
   .tags {
     flex-direction: column;
-    margin: 10px 0 0 0;
+    margin-right: 0;
+    margin-top: 10px;
   }
 
   .tags a {
     margin: 10px 0;
-    margin-right: 0;
   }
 
-  /* Home section */
   .main {
     flex-direction: column;
     height: auto;
@@ -361,56 +329,62 @@ textarea:focus {
 
   h4 {
     margin-left: 0;
-    padding: 0 15px;
+    padding: 0 10px;
     font-size: 1rem;
   }
 
   .img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     margin: 20px 0 0 0;
   }
 
-  /* Portfolio section */
+  #about,
+  #portfolio,
+  #contact {
+    margin-top: 0;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  #contact-form {
+    width: 90%;
+    padding: 20px;
+  
+}
+
+
   .prjt {
     flex-direction: column;
     gap: 40px;
   }
 
-  .amz, .rock {
+  .amz,
+  .rock {
     height: 180px;
     width: 180px;
   }
 
-  #ab, #abc {
-    margin-left: 0;
+  #ab,
+  #abc {
     margin-top: 15px;
     font-size: 1.4rem;
   }
 
-  /* About section spacing */
-  #about {
-    margin-top: 0;
-  }
-
-  /* Contact section */
   #contact-form {
     width: 90%;
     padding: 20px;
   }
 
-  /* Footer */
   .footer {
     height: auto;
-    padding: 25px 0;
-  }
-
-  .logo {
-    margin: 10px;
+    padding: 20px 0;
   }
 }
 
-/* Very small phones */
 @media (max-width: 480px) {
 
   .img {
@@ -426,9 +400,9 @@ textarea:focus {
     font-size: 1rem;
   }
 
-  .amz, .rock {
+  .amz,
+  .rock {
     height: 150px;
     width: 150px;
   }
-
 }
