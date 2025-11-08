@@ -1,71 +1,142 @@
-*{
-    margin-top: 20px;
-    padding: 0px;
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-align: center;
-    
-   
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+
+h1 {
     background-color: black;
-    height: 100px;
+    height: 80px;
     color: white;
-   
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.choice{
-    height: 200px;
-    width: 200px;
-    margin-left:20px;
-    border-radius: 50%;
 
-}
-
-.choices{
+.choices {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.choice:hover{
-    opacity: 0.5;
+
+.choice {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s ease-in-out;
+}
+
+.choice:hover {
+    opacity: 0.6;
     cursor: pointer;
-
+    transform: scale(1.05);
 }
-#rock{
+
+#rock {
     background-image: url("rock.png");
-    background-size: cover;
-/*  */
 }
-#paper{
-    background-image: url(paper.png);
-    background-size: cover;
+#paper {
+    background-image: url("paper.png");
+}
+#scissors {
+    background-image: url("scissors.png");
+}
 
-}
-#scissors{
-  
-       background-image: url(scissors.png);
-       background-size: cover;
-      
-}
-.score_card{
+
+.score_card {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     gap: 5rem;
-
 }
-#user_score,#comp_score{
+
+#user_score,
+#comp_score {
     font-size: 4rem;
-   
+    font-weight: bold;
 }
 
-#msg{
-    font-size: 2rem;
+
+.msg_conatainer {
+    margin-top: 30px;
+}
+
+#msg {
+    font-size: 1.7rem;
     background-color: black;
     color: white;
-    display: inline;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    display: inline-block;
     border-radius: 1rem;
-
 }
+
+@media (max-width: 768px) {
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    #msg {
+        font-size: 1.4rem;
+    }
+
+    .score_card {
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+
+    .choice {
+        height: 110px;
+        width: 110px;
+    }
+
+    #user_score, #comp_score {
+        font-size: 3rem;
+    }
+
+    .score_card {
+        font-size: 1.3rem;
+        gap: 2rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.4rem;
+    }
+}
+.restart_container {
+    margin-top: 25px;
+}
+
+#restart_btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#restart_btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+} 
+
+
