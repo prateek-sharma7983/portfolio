@@ -181,6 +181,7 @@ h4 {
   height: 200px;
   width: 200px;
   border: 2px solid white;
+  border-radius: 50%;
   background-image: url(ss.amz.jpg);
   background-size: cover;
 }
@@ -201,6 +202,7 @@ h4 {
   height: 200px;
   width: 200px;
   border: 2px solid white;
+  border-radius: 50%;
   background-image: url(ss.game.jpg);
   background-size: cover;
 }
@@ -232,7 +234,7 @@ h4 {
   padding: 30px;
   border-radius: 12px;
 }
-/* Contact page original PC layout fix */
+
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -242,8 +244,8 @@ h4 {
 }
 #sub {
   width: 100%;
-  background-color: #007bff;  /* blue */
-  color: white;                /* white text */
+  background-color: #007bff; 
+  color: white;                
   font-size: 1.1rem;
   padding: 12px;
   border: none;
@@ -254,7 +256,7 @@ h4 {
 }
 
 #sub:hover {
-  background-color: #0056b3;  /* darker blue */
+  background-color: #0056b3;  
   transform: scale(1.03);
 }
 
@@ -283,7 +285,7 @@ textarea {
   outline: none;
 }
 
-/* ---------------------- RESPONSIVE START ---------------------- */
+
 
 @media (max-width: 768px) {
 
@@ -360,12 +362,17 @@ textarea {
   .prjt {
     flex-direction: column;
     gap: 40px;
+
+
+    align-items: center;
+    text-align: center;
   }
 
   .amz,
   .rock {
     height: 180px;
     width: 180px;
+    
   }
 
   #ab,
